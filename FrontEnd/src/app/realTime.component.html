@@ -1,0 +1,36 @@
+<div style="display: block">
+  
+  <input type="text" value={{now}}/>
+    
+  <canvas baseChart
+      [chartType]="chartType"
+      [datasets]="chartDatasets"
+      [labels]="chartLabels"
+      [colors]="chartColors"
+      [options]="chartOptions"
+      [legend]="true">
+  </canvas>
+
+
+  
+<h3> Max recorded: </h3> <p>{{maxrecorded}} people in {{wheremaxrecorded}}</p>
+<h3> Min recorded: </h3> <p>{{minrecorded}} people in {{whereminrecorded}}</p>
+
+
+<button (click)="showFunction()"><h2>Show History:</h2></button>
+<button (click)="hideFunction()"><h2>Hide</h2></button>
+
+
+<div *ngIf="div1">  
+  <ul>
+      <dd *ngFor="let item of history | slice: 1">
+        {{ item }}
+      </dd>
+  </ul>
+</div>
+
+</div>  
+
+
+
+
