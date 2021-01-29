@@ -45,3 +45,10 @@ In this project we are using the [noble module](https://github.com/noble/noble) 
 
 Edit the file \bluetooth-hci-socket\lib\usb.js. 
 Then I added ```usb.findByIds(0x8087, 0x0A2A)``` on line 66. The parameters were fetched from zadig.exe (program) based on my PC.
+
+### VIDEO TUTORIAL:
+* https://web.microsoftstream.com/video/1fcf0704-1ace-45a4-886a-6fbeeb7f34c2
+This is the presentation
+
+* https://www.dropbox.com/s/6d3molnr8hcac4b/2020-11-08%2011-32-04.mp4?dl=0
+This is the video about the tutorial (how it works)
